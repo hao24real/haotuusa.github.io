@@ -156,8 +156,8 @@ function initEventListeners() {
  
 function updateCanvasDimensions() {
     canvas.attr({
-        height: 500,
-        width: 1000
+        height: 250,
+        width: 600
     });
     canvasWidth = canvas.width();
     canvasHeight = canvas.height();
@@ -294,13 +294,14 @@ $(window).mouseenter(function () {
     window.reset = false;
 });
  
+//declaration for using html canvas 
 var canvas = $("#myCanvas");
 var canvasHeight;
 var canvasWidth;
 var ctx;
 var pointCollection;
  
-document.rotationForce = 0.0;
+document.rotationForce = 0.01;
 document.Friction = 0.85;
 
 var white = [0, 0, 100];
