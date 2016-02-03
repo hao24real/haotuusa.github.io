@@ -10,8 +10,13 @@
     <meta name="description" content="My Personal Website">
     <meta name="author" content="Hao Tu">
     <title>Learning Bootstrap - Example01</title>
-    <!-- include bootstrap css style sheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- include bootstrap core css -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="styles/jumbotron-narrow.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,23 +26,71 @@
     <script type="text/javascript" src="scripts/min.js"></script>
     <script type="text/javascript" src="scripts/alphabet.js"></script>
 </head>
+
 <body>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Hello</h1>
-            <canvas id="myCanvas"></canvas>
-            <p>Welcome to my personal website</p>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">About</a></li>
+                    <li role="presentation"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Hao Tu</h3>
         </div>
-        <!-- button for changing name -->
-        <button id ="circle_button">Circle Bubble</button>
-        <button id ="square_button">Square Bubble</button>
-        <button id ="user_button">Change user</button>
-    </div>
-    <script type="text/javascript" src="scripts/bubbles.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+        <div class="jumbotron">
+            <h1>Hello, <canvas id="myCanvas"></canvas></h1>
+            <p class="lead">Welcome to my personal website! Click on the button
+            below to change the bubble shape of your name.</p>
+            <!-- button below heading-->
+            <p><a id = "shape_button" class="btn btn-lg btn-success" href="#" role="button">Square Bubble</a></p>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2016 look4tech, Inc.</p>
+        </footer>
+
+    </div> <!-- /container -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- bubble's name -->
+    <script type="text/javascript" src="scripts/bubbles.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
+
+        <!-- button for changing name -->
+        <!-- <button id ="circle_button">Circle Bubble</button>
+        <button id ="square_button">Square Bubble</button>
+        <button id ="user_button">Change user</button> -->
 </html>

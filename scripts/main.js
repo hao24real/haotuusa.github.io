@@ -1,7 +1,8 @@
 var myName; //for setting the name for bubble
-var square_button = document.getElementById('square_button');
-var circle_button = document.getElementById('circle_button');
-var user_button = document.getElementById('user_button');
+// var square_button = document.getElementById('square_button');
+// var circle_button = document.getElementById('circle_button');
+// var user_button = document.getElementById('user_button');
+var shape_button = document.getElementById('shape_button');
 //default bubbleShape start as circle
 bubbleShape = 'circle';
 
@@ -22,18 +23,18 @@ function setUserName() {
         drawName(myName, letterColors);
 }
 
-user_button.onclick = function(){
-        setUserName();
-}
-
-//set bubble shape to square
-square_button.onclick = function(){
-        bubbleShape = 'square';
-        drawName(myName, letterColors);
-}
-//set bubble shape to circle
-circle_button.onclick = function(){
-        bubbleShape = 'circle';
+//changing shape of button
+shape_button.onclick = function(){
+        if(bubbleShape === 'circle')
+        {
+                bubbleShape = 'square';
+                shape_button.innerHTML = 'Circle Bubble';
+        }
+        else
+        {
+                bubbleShape = 'circle';
+                shape_button.innerHTML = 'Square Bubble';
+        }
         drawName(myName, letterColors);
 }
 

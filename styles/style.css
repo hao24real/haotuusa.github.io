@@ -1,0 +1,28 @@
+/*html{
+        background-image: url(http://p1.pichost.me/i/56/1797601.jpg);
+}*/
+
+body {
+    /*adding the image to background*/
+    background-image: url(../images/back.jpg);
+}
+
+/**/
+.text-muted{
+    
+    color: #00539F;
+}
+
+.jumbotron h1 {
+    color: #00539F;
+    text-shadow: 5px 5px 1px gray;
+    /*setting up the font style*/
+    font-family: 'Special Elite', cursive; 
+}
+
+.container {
+    background-color: #FF9500;
+    border: 5px solid black;
+}
+/*for the menu bar buttons*/
+
