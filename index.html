@@ -9,14 +9,15 @@
     <!--  -->
     <meta name="description" content="My Personal Website">
     <meta name="author" content="Hao Tu">
-    <title>Learning Bootstrap - Example01</title>
+    <title>Hao Tu's Personal Web</title>
     <!-- include bootstrap core css -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="styles/jumbotron-narrow.css" rel="stylesheet">
+    <link href="styles/jumbotron.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,55 +29,46 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">About</a></li>
-                    <li role="presentation"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Hao Tu</h3>
+    
+    <div data-role="navbar" class="navbar-fixed-top">
+      <!-- div class="container"> -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Hao Tu</a>
         </div>
+        <!--<div class="container">-->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="theme" href="#">Home</a></li>
+                <li><a class="theme" href="#">About</a></li>
+                <li><a class="theme" href="#">Contact</a></li>
+            </ul>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="theme" href="../navbar/">Projects</a></li>
+                <li><a class="theme" href="../navbar-static-top/">Resume</a></li>
+                <!-- <li class="active"><a class="theme" href="./"><span class="sr-only">(current)</span></a></li> -->
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
 
-        <div class="jumbotron">
-            <h1>Hello, <canvas id="myCanvas"></canvas></h1>
-            <p class="lead">Welcome to my personal website! Click on the button
-            below to change the bubble shape of your name.</p>
-            <!-- button below heading-->
-            <p><a id = "shape_button" class="btn btn-lg btn-success" href="#" role="button">Square Bubble</a></p>
-        </div>
+    <div class="jumbotron" id="main_jumbo">
+        <center><canvas id="myCanvas"></canvas></center>
+        <center><p class="lead">Welcome to my personal website! Click on the 
+        button below to change the shape of the bubble.</p></center>
+        <!-- button below heading-->
+        <center><a id = "shape_button" class="btn btn-lg btn-success" 
+        href="#" role="button">Square Bubble</a></center>
+    </div>
 
-        <div class="row marketing">
-            <div class="col-lg-6">
-                <h4>Subheading</h4>
-                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-                <h4>Subheading</h4>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-                <h4>Subheading</h4>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            </div>
-
-            <div class="col-lg-6">
-                <h4>Subheading</h4>
-                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-                <h4>Subheading</h4>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-                <h4>Subheading</h4>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <p>&copy; 2016 look4tech, Inc.</p>
-        </footer>
-
-    </div> <!-- /container -->
+    <footer class="footer">
+        <p>&copy; 2016 look4tech, Inc.</p>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
